@@ -1,0 +1,85 @@
+IOT:-Internet Of Things
+In 1990 John Romky created a toaster, called as first IOT device. But IOT term was coined in 1999 by Kevin Ashton.
+In 2011 ipv4 moved to ipv6.
+ipv4 allows 2^32 addresses wheres as ipv6 addresses 2^128
+WIFI MODULE HAS BLACK ESP8266
+GPIO:- General Purpose Input Output
+Communication Protocol:- Machine have different protocols like UARTSPI,I2C etc.Bolt offers comunication over UART(Universal Asynchronous Receiver Transmitter).
+
+
+
+BOLT WIFI MODULE:- TECHNICAL SPECIFICATION OF BOLT WIFI MODULE
+ESP8266 Module is the heart of bolt.This offers wifi connectivity to bolt.It also has antenna for wifi connections.It can connect to almost all connections which work at 2.4 Ghz frequency.It can also act as a wifi router.ESP module also has a processor which runs at a frequency of 80 Mhz.ESP operate at voltage of 3.3V and powered by 5V USB adapter.As it worked only on 3.3V but we connect 5V as USB power supply generally work at 5V power supply. The bolt module has on board regulator which regulate power voltage by converting 5V to 3.3V
+
+VOLTAGE     BINARY     LEVEL
+3.3	      1		HIGH
+0             0		LOW
+
+A0 pin is the analog input pin and has inbuilt ADC 
+
+DIGITAL PIN: 0V OR 3.3V
+ANALOG PIN: 0V OR 1V
+
+
+BLUE LED Blink slowly means transmitting hotspot and ready for setup.When we connect my phone with hotspot the BLUE LED will blink fast and when it got connected it will become stable.When GREEN LED is on means it is connected with internet and blot cloud.  
+
+Steps
+1.Connect the charger.
+2.Power on the switch.
+3.Blue LED will blink slowly and is ready for setup.
+4.Connect your phone wifi to this hotspot.
+5.Then connect your Bolt Module with internet using Bolt App
+  
+HOME AUTOMATION MODEL :- https://www.youtube.com/watch?v=OShebS8KdgE&feature=youtu.be
+
+The communication of BOLT devices with cloud happens over the MQTT(MESSAGE QUEUE TELEMETRY TRANSPORT  protocol.HTTP/HTTPS protocols are not used as HTTP & HTTPS protocols are so popular and widely used for communication? Although these protocols are popular, the amount of overhead data that is sent over the Internet for managing the communication is quite a lot. Overhead data is the data which is sent along with the actual message/data which conveys the extra information required to understand the message/data sent. The overhead data varies from protocol to protocol. This is fine in case of systems such as mobile phones, laptops, desktop computes that have the hardware capabilities and the network capabilities to send the extra overhead data.
+
+Most IoT devices and sensors contain limited processing capabilities and constrained Internet bandwidth. Due to these limitations, they send data over the Internet only when required and the data sent is very low in terms of bandwidth usage. Hence using protocols such as HTTP, HTTPS does not become feasible where the overhead data is more than the actual data itself. MQTT contains very low overhead and hence becomes ideal for IoT communication.
+
+MQTT is a pub-sub messaging protocol. Pub refers to publishing and sub refers to subscribing. There is a central entity, in our case it is the Bolt Cloud. All the Bolt devices connect to the Bolt Cloud and send the data to various channels by publishing the data on their unique channels. The Bolt devies also subscribe to channels so that they can receive commands coming from the Bolt users.
+
+The Bolt Cloud users i.e. people like us communicate with the Bolt Cloud using the HTTPS communication protocol. We can use the Bolt Cloud dashboard to control and monitor our Bolt devices or use the Bolt Cloud APIs in case we want to by-pass the dashboard and access our Bolt devices via programs that we have written. 
+
+Bolt Cloud receives all the commands to control or request for sensor data from Bolt devices, and sends the commands to the Bolt device. The Bolt device executes the commands, and sends a response back to the Bolt Cloud which in turn forwards it to the user who initiated the command.
+
+
+On cloud.boltiot.com(on cloud),PRODUCT PART  is the collection of Bolt wifi modules that have similar configuration and code on them.
+
+
+
+
+LDR LIGHT DEPENDENT RESISTOR In darkness LDR increases its resistance and when light falls on it LDR reduces its resistance.THE BOLT WIFI MODULE IS APABLE OF MEASURING CHANGES VIA A0(ANALOG TO DIGITAL) PIN.
+
+HTML was invented by TIM BERNERS LEE in 1990
+
+In May 1995 Brenden Eiche developed JS while working at NETSCAPE.The original name of JS was MOCKA chosen by Marc Anderson ,the founder of netscape.The language was officially called LIVESCRIPT.
+In JS
+The setTimeout function executes a function or set of code statements once after a certain interval of time. It is useful in cases where we want some code to execute once after an interval and not immediately.
+The Set interval function executes a function or code statements repeatedly after a set interval. It is useful in cases where we want some code to execute repeatedly at a set interval.
+
+
+In context of web based application a special category of API'S called REST (REPRESENTAIONAL STATE TRANSFER) which includes methods like GET,PUT,POST,DELETE are used
+
+
+
+Kernal+utilitues=Distribution
+In a computer the kernel is not of much use by itself so the kernel is bundled with utilities called DISTRIBUTION.
+Kernel translate your language into 0/1 and vice versa.
+
+
+BTHM Bolt Temperature and Humidity Monitor
+LM35 is temperature sensor.LM35 uses the fact that when the ambient temperature of the transistor changes so does the curret flowing through it.It has transistor and several amplifier will allow this change in cuurent to change in voltage.
+We required a voltage divider circuit in LDR but in LM35 has internal voltage divider circuit so we can interface it directly with analog input pin A0 of the wifi module.
+The analog pin voltage output is converted into degree celsius using formula 
+T=r/10.24.
+LM35 sensor can be used to measure the temp. -55 degree celsius to 155 degree celsius.
+
+Twilio is a third-party SMS functionality provider. It is a cloud communications platform as a service (PaaS) company. Twilio allows software developers to programmatically make and receive phone calls and also send and receive text messages using its web service APIs.	
+
+
+Prediction:-
+p=Tuning parameter
+for eg on day1 no. of sweets sold are 2 then on day2 no. of sweets sold are 12 therefore no. of extra sweets sold are 10
+On day3 no. of sweets sold are 21 i.e no. of extra sweets sold are 9
+On day 4 no. of sweets sold are 29 i.e. no. of extra sweets are 8
+Tuning parameter is 1 as 10-9=9-8 Extra sweets we sell each day is reduced by constant 1
