@@ -16,7 +16,7 @@ Butt1=Button(start,text="ON",command=on)
 Butt1.pack()
 Butt2=Button(start,text="OFF",command=off)
 Butt2.pack()
-#Bolt led control code
+#Bolt led control  code for working 
 API=""
 device_id=""
 mybolt=Bolt(API,device_id)
